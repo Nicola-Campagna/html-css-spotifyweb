@@ -18,6 +18,27 @@
     border: 5px solid black;
 }
 
+.sidebar>div{
+    padding: 15px;
+    margin: 5px;
+    /* debug */
+    border: 1px solid green;
+}
+.sidebar .img{
+    /* border: 1px solid green; */
+}
+
+.sidebar .nav-top{
+
+}
+
+.sidebar .playlist ul li{
+    display:block;
+
+}
+
+
+
 /* HEADER */
 
 
@@ -56,9 +77,6 @@ main{
 
 }
 
-
-
-
 footer{
     height: 80px;
 
@@ -66,3 +84,7 @@ footer{
     border: 10px solid red;
 
 }
+
+
+
+/* ASIDE */
