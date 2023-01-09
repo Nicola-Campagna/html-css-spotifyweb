@@ -19,6 +19,21 @@
 	display: table;
 }
 
+ul li{
+    list-style: none;
+    display: inline;
+}
+
+ul li a{
+    text-decoration: none;
+}
+
+
+
+
+
+
+
 /* PADDING */
 
 .p1 {
