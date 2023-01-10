@@ -4,6 +4,15 @@
     --sidebar-width:300px;
 }
 
+h2{
+    font-size: 40px;
+
+}
+
+h3{
+    font-size:25px;
+
+}
 
 
 .top-content{
@@ -11,15 +20,89 @@
 
 }
 
+/********************
+      SIDEBAR
+*********************/
+
 .sidebar{
     width:var(--sidebar-width);
     height:calc(100vh - var(--footer-height));
 
+    overflow: auto;
+    flex-direction: column;
+
+    background-color:#000000 ;
+    color: white;
+      
+    position: relative;
+    
+    
     /* debug */
-    background-color: blue;
+    /* border: 5px solid black; */
+}
+
+.sidebar section{
+    /* margin: auto 5px; */
+    margin-left: 5px;
 
 }
 
+.sidebar .logo-boolify{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: var(--sidebar-width);
+    height: var(--header-height);
+
+    line-height:var(--header-height);
+    
+    /* text-align: center; */
+}
+
+.logo-boolify img{
+    object-fit: cover;
+    vertical-align: middle;
+
+}
+
+.sidebar>section:nth-child(2){
+    padding-top: var(--header-height);
+    margin-bottom:80px;
+}
+
+.sidebar ul li{
+    display: block;
+}
+.sidebar img{
+    height: 50px;
+}
+
+.sidebar a{
+    font-size: 25px;
+}
+
+.sidebar .playlist ul li{
+    padding: 15px 0;
+    margin-left: 5px;
+
+    color:gray;
+
+    
+}
+
+.sidebar .profile-section{
+    position: absolute;
+    bottom: 0;   
+    left: 5px;
+}
+
+hr{
+    margin: 10px 0;
+}
+
+/********************
+      CONTENT
+*********************/
 .content{
     height: calc(100vh - var(--footer-height));
     width: calc(100% - var(--sidebar-width));
@@ -28,34 +111,47 @@
     
 }
 
-
+/********************
+      HEADER
+*********************/
 header{
     height: var(--header-height);
 
+    width: 100%;
     position: fixed;
     top: 0;
     left:var(--sidebar-width);
-    width: 100%;
+
+    background-color:#080B12;
 
     /* debug */
-    background-color: black;
-
+    border: 5px solid black;
 }
 
+
+/********************
+      MAIN
+*********************/
 main{
     height: 100%;
     padding-top: var(--header-height);
 
     overflow: auto;
 
+    background-color: #141922;
+
 }
 
 
+
+/********************
+      FOOTER
+*********************/
 footer{
     height: var(--footer-height);
     /* width: 100%; */
 
     /* debug */
-    background-color: red;
+    border:5px solid lightcoral;
 
 }
