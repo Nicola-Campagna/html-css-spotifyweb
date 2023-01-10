@@ -6,11 +6,13 @@
 
 h2{
     font-size: 40px;
+    color: white;
 
 }
 
 h3{
     font-size:25px;
+    color: gray;
 
 }
 
@@ -34,7 +36,7 @@ h3{
     background-color:#000000 ;
     color: white;
       
-    position: relative;
+    /* position: relative; */
     
     
     /* debug */
@@ -44,6 +46,7 @@ h3{
 .sidebar section{
     /* margin: auto 5px; */
     margin-left: 5px;
+    border: 1px solid red;
 
 }
 
@@ -55,7 +58,7 @@ h3{
     height: var(--header-height);
 
     line-height:var(--header-height);
-    
+
     /* text-align: center; */
 }
 
@@ -66,8 +69,10 @@ h3{
 }
 
 .sidebar>section:nth-child(2){
-    padding-top: var(--header-height);
+    padding-top:20px;
+    margin-top:var(--header-height);
     margin-bottom:80px;
+
 }
 
 .sidebar ul li{
@@ -81,19 +86,22 @@ h3{
     font-size: 25px;
 }
 
+.sidebar .playlist{
+    margin-bottom: 20px;
+
+}
 .sidebar .playlist ul li{
     padding: 15px 0;
     margin-left: 5px;
-
     color:gray;
 
     
 }
 
 .sidebar .profile-section{
-    position: absolute;
+    /* position: absolute;
     bottom: 0;   
-    left: 5px;
+    left: 5px; */
 }
 
 hr{
@@ -107,8 +115,7 @@ hr{
     height: calc(100vh - var(--footer-height));
     width: calc(100% - var(--sidebar-width));
     /* debug */
-    background-color: orangered;
-    
+    /* background-color: orangered; */
 }
 
 /********************
@@ -121,13 +128,22 @@ header{
     position: fixed;
     top: 0;
     left:var(--sidebar-width);
+    z-index: 1;
 
     background-color:#080B12;
-
+    color:white;
+  
     /* debug */
-    border: 5px solid black;
+    /* border: 5px solid black; */
 }
 
+
+header>div.btn{
+    font-size: 20px;
+    color: white;
+    border-color: white;
+    text-align: center;
+}
 
 /********************
       MAIN
@@ -139,6 +155,26 @@ main{
     overflow: auto;
 
     background-color: #141922;
+}
+
+main ul li{
+    padding:10px 35px;
+    margin-bottom:30px;
+    /* debug */
+    border: 1px solid red;
+}
+
+main h2,
+main h3,
+main .row{
+    padding-bottom: 20px;
+}
+
+main .container .row>div{
+    padding: 10px;
+    text-align: center;
+
+    border: 1px solid green;
 
 }
 
@@ -149,9 +185,76 @@ main{
 *********************/
 footer{
     height: var(--footer-height);
+    background-color: #282828;
     /* width: 100%; */
-
     /* debug */
-    border:5px solid lightcoral;
+    color: white;
+
+}
+
+footer i{
+    padding: 0 10px;
+    font-size: 20px;
+}
+
+footer>div{
+    align-self: center;
+
+}
+
+footer .img-m-player img{
+    height:calc(var(--footer-height) / 2);
+}
+
+footer .img-m-player{
+    margin-left: 5px;
+  
+}
+
+footer ul li{
+    display: inline-block;
+}
+
+.media-player{
+    text-align: center;
+}
+.bars-media-player i{
+   font-size: 30px;
+}
+.bars-media-player{
+    padding-bottom: 20px;
+}
+
+.music-in-bars{
+    width:500px;
+    align-self: center;
+    margin-right: 10px;
+    border-radius: 4px;
+    border: 2px solid gray;
+}
+
+.play{
+    width: 300px;
+    align-self: center;
+    margin-left: 10px;
+    border-radius: 4px;
+
+    border: 4px solid lightgrey;
+}
+
+.bars{
+    width:100px;
+    align-self: center;
+    margin-right: 10px;
+    border-radius: 4px;
+    border: 2px solid gray;
+
+}
+
+.in-bars{
+    width: 30px;
+    border-radius: 4px;
+    border: 4px solid lightgrey;
+    
 
 }
