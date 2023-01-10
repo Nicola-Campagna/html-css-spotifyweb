@@ -19,6 +19,13 @@
 	display: table;
 }
 
+.btn{
+	border-radius:10px;
+	border: 2px solid black;
+	padding: 10px;
+	
+}
+
 ul li{
     list-style: none;
     display: inline;
