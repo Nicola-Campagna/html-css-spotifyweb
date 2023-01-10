@@ -123,8 +123,9 @@ hr{
 *********************/
 header{
     height: var(--header-height);
+    width: calc(100% - var(--sidebar-width));
 
-    width: 100%;
+    /* width: 100%; */
     position: fixed;
     top: 0;
     left:var(--sidebar-width);
@@ -132,17 +133,23 @@ header{
 
     background-color:#080B12;
     color:white;
+
+    text-align: right;
+
+    line-height: var(--header-height);
   
     /* debug */
     /* border: 5px solid black; */
 }
 
 
-header>div.btn{
+header>span.btn{
+    vertical-align: middle;
     font-size: 20px;
     color: white;
     border-color: white;
     text-align: center;
+
 }
 
 /********************
