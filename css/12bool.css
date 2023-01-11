@@ -52,6 +52,11 @@
 
 }
 
+/* FLEX-WRAP */
+.f-wrap{
+    flex-wrap: wrap;
+}
+
 /* CONTAINER / ROW */
 
 .container{

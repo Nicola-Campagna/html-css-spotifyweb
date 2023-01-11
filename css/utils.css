@@ -23,7 +23,8 @@
 	border-radius:30px;
 	border: 2px solid white;
 	/* width:10%; */
-	padding: 10px 30px;
+	padding: 7px;
+	/* align-content: center; */
 }
 
 .circle-profile img{
